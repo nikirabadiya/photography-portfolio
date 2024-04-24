@@ -1,1 +1,136 @@
-/* You can add global styles to this file, and also import other style files */
+// Fonts import css
+@font-face {
+  font-family: 'product-pro-medium';
+  src: url('./assets/fonts/functionProduct_Pro-medium.eot');
+  src: url('./assets/fonts/functionProduct_Pro-medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/functionProduct_Pro-medium.woff2') format('woff2'),
+      url('./assets/fonts/functionProduct_Pro-medium.woff') format('woff'),
+      url('./assets/fonts/functionProduct_Pro-medium.ttf') format('truetype'),
+      url('./assets/fonts/functionProduct_Pro-medium.svg#.') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'product-pro-bold';
+  src: url('./assets/fonts/functionProduct_Pro-bold.eot');
+  src: url('./assets/fonts/functionProduct_Pro-bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/functionProduct_Pro-bold.woff2') format('woff2'),
+      url('./assets/fonts/functionProduct_Pro-bold.woff') format('woff'),
+      url('./assets/fonts/functionProduct_Pro-bold.ttf') format('truetype'),
+      url('./assets/fonts/functionProduct_Pro-bold.svg#.') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'product-pro-black';
+  src: url('./assets/fonts/functionProduct_Pro-black.eot');
+  src: url('./assets/fonts/functionProduct_Pro-black.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/functionProduct_Pro-black.woff2') format('woff2'),
+      url('./assets/fonts/functionProduct_Pro-black.woff') format('woff'),
+      url('./assets/fonts/functionProduct_Pro-black.ttf') format('truetype'),
+      url('./assets/fonts/functionProduct_Pro-black.svg#.') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'product-pro-light';
+  src: url('./assets/fonts/functionProduct_Pro-light.eot');
+  src: url('./assets/fonts/functionProduct_Pro-light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/functionProduct_Pro-light.woff2') format('woff2'),
+      url('./assets/fonts/functionProduct_Pro-light.woff') format('woff'),
+      url('./assets/fonts/functionProduct_Pro-light.ttf') format('truetype'),
+      url('./assets/fonts/functionProduct_Pro-light.svg#.') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'product-pro-regular';
+  src: url('./assets/fonts/functionProduct_Pro.eot');
+  src: url('./assets/fonts/functionProduct_Pro.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/functionProduct_Pro.woff2') format('woff2'),
+      url('./assets/fonts/functionProduct_Pro.woff') format('woff'),
+      url('./assets/fonts/functionProduct_Pro.ttf') format('truetype'),
+      url('./assets/fonts/functionProduct_Pro.svg#.') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+//import scss files
+@import url('./assets/scss/variables.scss');
+@import url('./assets/scss/fonts.scss');
+@import url('./assets/scss/layout.scss');
+@import url('./assets/scss/colors.scss');
+
+// general css
+body {
+  background-color: var(--var-color-black) !important;
+  color: var(--var-color-white) !important;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'product-pro-regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+input,
+select {
+  font-family: 'product-pro-regular';
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: none !important;
+  -webkit-text-fill-color: var(--var-color-white) !important
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

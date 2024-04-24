@@ -1,0 +1,12 @@
+<div class="home-banner">
+  <div class="banner-slider">
+    <ngx-slick-carousel class="carousel space" [config]="slideConfig" #slickModal="slick-carousel" id="crypto-slide">
+      <div class="swiper-slide" ngxSlickItem *ngFor="let slide of homeSlides">
+        <div class="banner-img">
+          <img [src]="slide.imgSrc" alt="bannerSlider" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </ngx-slick-carousel>
+    <span class="pagingInfo"></span>
+  </div>
+</div>
