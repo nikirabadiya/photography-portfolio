@@ -311,6 +311,7 @@
 
       .collection-img {
         .counter {
+          pointer-events: none;
           position: absolute;
           left: calc(100% - 17%);
           top: 12px;
