@@ -1,3 +1,29 @@
-<div class="main-header">
-
+<div class="main-header py-3">
+  <div class="container-lg">
+    <div class="d-flex align-items-center justify-content-between gap-3">
+      <a href="/" class="fs-24 title-font lh-base text-white d-inline-flex flex-shrink-0">Logo</a>
+      <ul class="header-nav d-md-flex" [ngClass]="isOpen ? 'open' : ''">
+        <li><a nohref class="fs-14 p-md-2 px-md-3 lh-base d-inline-block" (click)="isOpen =! isOpen"
+            [ngClass]="isOpen ? 'open' : ''">Home</a></li>
+        <li><a nohref class="fs-14 p-md-2 px-md-3 lh-base d-inline-block" (click)="isOpen =! isOpen"
+            [ngClass]="isOpen ? 'open' : ''">Contract</a></li>
+        <li><a nohref class="fs-14 p-md-2 px-md-3 lh-base d-inline-block" (click)="isOpen =! isOpen"
+            [ngClass]="isOpen ? 'open' : ''">Blog</a></li>
+        <li><a nohref class="fs-14 p-md-2 px-md-3 lh-base d-inline-block" (click)="isOpen =! isOpen"
+            [ngClass]="isOpen ? 'open' : ''">Gallery</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-primary">Hire Us</button>
+        <div class="mobile-menu d-block d-md-none">
+          <div class="nav-icon" (click)="isOpen =! isOpen" [ngClass]="isOpen ? 'open' : ''">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-overlay d-block d-md-block" [ngClass]="isOpen ? 'open' : ''" (click)="isOpen =! isOpen"
+    [ngClass]="isOpen ? 'open' : ''"></div>
 </div>

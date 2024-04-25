@@ -7,6 +7,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgxParallaxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

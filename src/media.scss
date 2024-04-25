@@ -1,3 +1,25 @@
-@media (max-width: 1199px) {
+@media (min-width: 576px) {
+  .container-lg {
+    padding: 0 20px;
+  }
+}
 
+@media (max-width: 991px) {
+  .carousel.space .slick-arrow {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel.space:not(.banner-carousel) {
+    margin: 0 -8px;
+  }
+
+  .carousel.space:not(.banner-carousel) .swiper-slide {
+    margin: 0 8px;
+  }
+
+  .carousel.space .slick-arrow {
+    bottom: 24px;
+  }
 }

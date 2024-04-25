@@ -1,12 +1,484 @@
-<div class="home-banner">
-  <div class="banner-slider">
-    <ngx-slick-carousel class="carousel space" [config]="slideConfig" #slickModal="slick-carousel" id="crypto-slide">
-      <div class="swiper-slide" ngxSlickItem *ngFor="let slide of homeSlides">
-        <div class="banner-img">
+<div class="home-banner position-relative d-flex align-items-center justify-content-center border-bottom grey">
+  <div class="banner-slider position-absolute w-100 h-100 top-0 start-0">
+    <ngx-slick-carousel class="carousel space banner-carousel h-100 m-0" [config]="bannerSlideConfig"
+      #slickModal="slick-carousel" id="banner-slide">
+      <div class="swiper-slide p-0" ngxSlickItem *ngFor="let slide of homeSlides">
+        <div class="banner-img h-100 overflow-hidden position-relative">
           <img [src]="slide.imgSrc" alt="bannerSlider" class="w-100 h-100 object-fit-cover">
         </div>
       </div>
     </ngx-slick-carousel>
-    <span class="pagingInfo"></span>
+  </div>
+  <div class="banner-content text-center position-relative z-1">
+    <div class="title-block border-top border-bottom yellow mb-4 mb-md-5">
+      <h2 class="fs-80 lh-sm font-glitch mb-2">Capture</h2>
+      <p class="fs-22 lh-base title-font text-uppercase">Photo Studio</p>
+    </div>
+    <p class="lh-base">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dicta facere, soluta asperiores animi ipsa
+      labore nihil id illum ratione! Omnis dolores perferendis tenetur ullam consequatur veniam aspernatur sequi quas?
+      Voluptates animi fugit, voluptatem repudiandae commodi odio officia velit molestias voluptas veritatis
+      doloremque similique magni quas illum dolorum dicta debitis ex iure recusandae ullam facilis! Saepe obcaecati id
+      libero labore.
+    </p>
+  </div>
+</div>
+<div class="grid-section border-bottom grey">
+  <div class="container-lg">
+    <div class="title-block text-center mb-4 mb-md-5">
+      <h2 class="fs-32 lh-base title-font mb-3">Recent Works</h2>
+      <p class="fs-16 lh-base m-0">
+        Voluptatem minima nostrum in voluptate, exercitationem aspernatur ratione necessitatibus quae obcaecati fugit.
+      </p>
+    </div>
+    <div class="grid-block">
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-01.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-02.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center tall rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-09.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center wide rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-12.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-03.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center tall rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-04.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center big rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-05.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-13.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center wide rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-06.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center big rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-08.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center tall rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-14.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-10.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-07.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-11.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center tall rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-16.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center wide rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-17.jpeg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-item d-flex align-items-center justify-content-center rounded-1 overflow-hidden">
+        <img src="assets/images/grid-img-15.jpg" alt="gridImg" class="w-100 h-100 object-fit-cover">
+        <div class="icon-block d-flex align-items-center gap-2">
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              favorite
+            </span>
+          </a>
+          <a nohref
+            class="avatar-xxs rounded-1 bg-white d-inline-flex align-items-center justify-content-center fs-12 lh-1 text-black">
+            <span class="material-symbols-outlined d-inline-flex">
+              share
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-section border-bottom grey">
+  <div class="container-lg">
+    <div class="title-block text-center mb-4 mb-md-5">
+      <h2 class="fs-32 lh-base title-font mb-3">Customer Success Stories</h2>
+      <p class="fs-16 lh-base m-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur corrupti, corporis placeat
+        accusantium cumque autem ipsum ad maxime rem.
+      </p>
+    </div>
+    <div class="testimonial-slider">
+      <ngx-slick-carousel class="testimonial-show carousel space" [config]="testimonialConfig"
+        #slickModal="slick-carousel" id="testimonial-slide">
+        <div class="swiper-slide position-relative" ngxSlickItem *ngFor="let slide of testimonialSlides">
+          <div class="row align-items-end g-0">
+            <div class="col-lg-7 img-col">
+              <div class="testimonial-banner">
+                <img [src]="slide.img" alt="testimonialSlide" class="w-100 h-100 object-fit-cover">
+              </div>
+            </div>
+            <div class="col-lg-5 pb-lg-4 content-col">
+              <div class="bg-white content-box text-black">
+                <div class="quote-img avatar-md mb-3">
+                  <img src="assets/images/quote.svg" alt="quoteImg">
+                </div>
+                <p class="desc fs-14 lh-base mb-4 pb-md-3 ls-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vitae. Illum quod fuga voluptas, autem
+                  quo est vero quis? Quo necessitatibus itaque voluptatum ea magnam quos totam fugit tempore in!
+                  Ex et in, est itaque ullam recusandae repudiandae dolor exercitationem vel aut distinctio autem
+                  blanditiis, nisi nostrum beatae, quam delectus error. Alias voluptate optio molestias nostrum hic
+                  ullam distinctio perspiciatis!
+                </p>
+                <div class="reviewer-row d-flex align-items-center gap-2">
+                  <div
+                    class="d-inline-flex align-items-center justify-content-center avatar-md rounded-circle border black overflow-hidden">
+                    <img src="assets/images/user-img.jpg" alt="userIcon" class="w-100 h-100 object-fit-cover">
+                  </div>
+                  <span class="flex-grow-1">
+                    <h5 class="fs-16 lh-base fw-bold m-0">
+                      {{ slide.title }}
+                    </h5>
+                    <p class="fs-12 lh-base text-muted secondary-text m-0">
+                      Occupation details
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+      <div class="pagination-block mt-4 d-flex align-items-center justify-content-between">
+        <h5 class="fs-18 lh-base fw-bold pe-4 bg-black position-relative z-1 m-0">Happy users</h5>
+        <p class="fs-18 lh-base fw-bold ps-4 bg-black position-relative z-1 m-0 paging-info">1/7</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="collection-section border-bottom grey overflow-hidden">
+  <div class="section-bg" style="background-image: url(assets/images/gallery-img-01.jpg);" ngx-parallax [speed]="20">
+  </div>
+  <div class="container-lg position-relative z-1">
+    <div class="title-block text-center mb-4 mb-md-5">
+      <h2 class="fs-32 lh-base title-font mb-3">Mountain Collections</h2>
+      <p class="fs-16 lh-base m-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam ipsam officiis voluptas eum.
+        Corporis aliquid reiciendis placeat nemo.
+      </p>
+    </div>
+    <div class="inner-row" *ngFor="let collection of collections; let i = index">
+      <div class="row row-gap-3 align-items-end">
+        <div class="col-sm-6 col-lg-5">
+          <div class="inner-block h-100">
+            <div class="collection-img position-relative">
+              <div class="img-wrapper h-100 rounded-1 overflow-hidden position-relative z-1">
+                <img [src]="collection.collectionImg" alt="collectionImg" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="counter font-poller d-none d-sm-block">
+                0{{ i + 1}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-7">
+          <div class="inner-block h-100 text-sm-end ms-sm-auto">
+            <div class="upper-wrap mb-3 mb-md-4">
+              <div class="block-title mb-3 mb-md-4">
+                <h5 class="fs-18 lh-base fw-bold mb-1">
+                  {{ collection.collectionTitle }}
+                </h5>
+                <p class="fs-14 lh-base text-grey m-0">
+                  {{ collection.sub }}
+                </p>
+              </div>
+              <p class="fs-16 lh-base m-0 line-clamp line-clamp-4">
+                {{ collection.description }}
+              </p>
+            </div>
+            <a nohref class="fs-16 lh-base text-green">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="feature-section border-bottom grey">
+  <div class="container-lg">
+    <div class="title-block text-center mb-4 mb-md-5">
+      <h2 class="fs-32 lh-base title-font mb-3">Featured Sports</h2>
+      <p class="fs-16 lh-base m-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugiat culpa ipsam, beatae ratione deleniti minima
+        a
+        nostrum, natus quisquam!
+      </p>
+    </div>
+    <div class="feature-slider">
+      <ngx-slick-carousel class="feature-show carousel space" [config]="featureConfig" #slickModal="slick-carousel"
+        id="feature-slide">
+        <div class="swiper-slide" ngxSlickItem *ngFor="let slide of features">
+          <div class="feature-card border grey rounded-1 p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+            <div class="upper-block mb-3 mb-md-4">
+              <div class="feature-img mb-4 rounded-1 overflow-hidden">
+                <img [src]="slide.imgSrc" alt="FeatureImg" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="block-title mb-3 mb-md-4">
+                <h5 class="fs-16 fw-bold lh-base mb-1">{{ slide.title }}</h5>
+                <p class="fs-12 lh-base text-grey m-0">{{ slide.sub }}</p>
+              </div>
+              <p class="fs-14 lh-base m-0 line-clamp line-clamp-4">
+                {{ slide.description }}
+              </p>
+            </div>
+            <a nohref class="fs-14 lh-base text-green">Read More</a>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>
+<div class="gallery-section border-bottom grey">
+  <div class="container-lg">
+    <div class="title-block text-center mb-4 mb-md-5">
+      <h2 class="fs-32 lh-base title-font mb-3">Best of Shots</h2>
+      <p class="fs-16 lh-base m-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam ipsam officiis voluptas eum.
+      </p>
+    </div>
+    <div class="gallery-slider">
+      <ngx-slick-carousel class="carousel space gallery-carousel" [config]="galleryConfig" #slickModal="slick-carousel"
+        id="gallery-slide">
+        <div class="swiper-slide p-0" ngxSlickItem *ngFor="let slide of gallery">
+          <div class="gallery-img rounded-1 overflow-hidden">
+            <img [src]="slide.imgSrc" alt="gallerySlider" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
   </div>
 </div>
