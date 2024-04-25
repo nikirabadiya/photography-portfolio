@@ -37,6 +37,13 @@ export class HomeComponent implements OnInit {
         });
       }, 500);
     });
+
+    $(window).on('load', function () {
+      setTimeout(function () {
+        var sectionHeight = $('.home-banner .banner-slider').outerHeight();
+        $('.home-banner .slick-list, .home-banner .swiper-slide').css('height', sectionHeight);
+      }, 500);
+    });
   }
 
   slickInit(e: any) { };
